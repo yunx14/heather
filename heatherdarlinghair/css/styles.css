@@ -240,6 +240,14 @@ dd {
 #instafetch article {
   display: inline-block;
   width: 300px;
-  height: 300px
+  height: auto;
+}
+
+@media(min-width: 767px) {
+  #instafetch article {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+  }
 }
 
