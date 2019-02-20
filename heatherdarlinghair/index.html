@@ -240,7 +240,7 @@
 	    numOfPics: 10,
 	    caption: false
 	  });
-	  setTimeout(callSlick, 2000);
+	  $(window).on('load', callSlick);
 	}
 	function callSlick() {
 		$('#instafetch').slick({
