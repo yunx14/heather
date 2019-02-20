@@ -1,6 +1,13 @@
 html {
-	font-size: 20px;
-  line-height: 1.5;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+@media(min-width: 767px) {
+  html {
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }
 
 body {
@@ -228,5 +235,11 @@ dd {
     display: inline-block;
     width: 48%;
   }
+}
+
+#instafetch article {
+  display: inline-block;
+  width: 300px;
+  height: 300px
 }
 

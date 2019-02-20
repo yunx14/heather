@@ -18,6 +18,8 @@
 
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
 	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 
@@ -127,8 +129,11 @@
 			</div>
 		</div>
 
-		<div class="instagram">
-			<h2 class="center">Instagram Feed Goes Here</h2>
+		<div class="instagram" style="padding-bottom: 1.5rem; padding-top: 1.5rem; background-color: pink;">
+			<div class="container">
+				<h2 class="center">Follow Heather.slays.hair on Instagram</h2>
+				<div id="instafetch"></div>
+			</div>
 		</div>
 
 		<div class="contact">
@@ -224,8 +229,39 @@
 		</div>
 
 	</main>
-	<footer>
-		
-	</footer>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/instafetch.js/1.5.0/instafetch.min.js"></script>
+<script type="text/javascript">
+	function initialize() {
+		instafetch.init({
+	    accessToken: '947836510.1677ed0.7ce6141f51304473a7d14f707874c8c0',
+	    target: 'instafetch',
+	    numOfPics: 10,
+	    caption: false
+	  });
+	  setTimeout(callSlick, 1000);
+	}
+	function callSlick() {
+		$('#instafetch').slick({
+			infinite: true,
+		  slidesToShow: 3,
+		  slidesToScroll: 1,
+		  responsive: [
+		  	{
+		  		breakpoint: 767,
+		  		settings: {
+		  			slidesToShow: 1,
+		  			slidesToScroll: 1
+		  		}
+		  	}
+		  ]
+		});
+	}
+  initialize();
+
+  // setTimeout($('#instafetch').slick(), 5000);
+  
+</script>
 </body>
 </html>
