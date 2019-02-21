@@ -27,26 +27,31 @@ body {
 h1 {
   font-size: 3rem;
   margin: 2rem 0;
+  font-family: 'Arima Madurai', cursive;
 }
 
 h2 {
   font-size: 2rem;
   margin: 1.75rem 0;
+  font-family: 'Arima Madurai', cursive;
 }
 
 h3 {
   font-size: 1.75rem;
   margin: 1.5rem 0;
+  font-family: 'Arima Madurai', cursive;
 }
 
 h4 {
   font-size: 1.5rem;
   margin: 1.5rem 0;
+  font-family: 'Arima Madurai', cursive;
 }
 
 h5 {
   font-size: 1.25rem;
   margin: 1.5rem 0;
+  font-family: 'Arima Madurai', cursive;
 }
 
 p {
